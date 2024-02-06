@@ -1,0 +1,7 @@
+version: '3'
+services:
+  nodejs-app:
+    image: nodejs:ci-cd
+    container_name: nodejs
+    ports:
+      - 80:80
