@@ -5,7 +5,7 @@ pipeline {
         stage ('build') {
             steps {
                 sh ' chmod +x build.sh'
-		sh './bild.sh'
+		sh './build.sh'
             }
         }
 
