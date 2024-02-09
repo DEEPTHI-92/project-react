@@ -6,7 +6,7 @@ read -s -p "Enter Docker Hub password: " PASSWORD
 echo "$PASSWORD" | docker login $REGISTRY_URL -u $USERNAME --password-stdin
 unset PASSWORD
 docker-compose up -d
-docker tag nodejs deepthiarmour/dev
+docker tag nodejs deepthiarmour/prod
 
-docker push deepthiarmour/dev
+docker push deepthiarmour/prod
 
